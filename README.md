@@ -43,3 +43,17 @@ Print free RAM.
 Print hostname.
 Print architecture.
 Print platform.
+
+🟡 Level 2 — HTTP Server
+Episode 6
+
+Create server without Express.
+http.createServer(...)
+
+Practice:
+Hello World server
+Return JSON
+Return HTML
+Return 404
+Handle different routes
+Serve static file
