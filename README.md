@@ -29,3 +29,9 @@ Create folder.
 Delete folder.
 Read directory contents.
 Watch file changes.
+
+Episode 4: Path Module
+Join paths.
+Resolve paths.
+Normalize path.
+Parse path.
