@@ -1,0 +1,13 @@
+{
+  "name": "file_system",
+  "version": "1.0.0",
+  "description": "To Test FS module in nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "priyanshu",
+  "license": "ISC",
+  "type": "module"
+}

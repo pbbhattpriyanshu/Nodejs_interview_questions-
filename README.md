@@ -17,3 +17,15 @@ Export multiple functions.
 Import module using CommonJS.
 Import module using ES Modules.
 Create a Calculator module.
+
+Episode 3: File System (fs)
+Read a file.
+Write a file.
+Append data.
+Delete a file.
+Rename a file.
+Copy a file.
+Create folder.
+Delete folder.
+Read directory contents.
+Watch file changes.
