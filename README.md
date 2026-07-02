@@ -35,3 +35,11 @@ Join paths.
 Resolve paths.
 Normalize path.
 Parse path.
+
+Episode 5: OS Module
+Print CPU information.
+Print total RAM.
+Print free RAM.
+Print hostname.
+Print architecture.
+Print platform.
