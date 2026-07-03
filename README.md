@@ -68,3 +68,16 @@ Return JSON
 Return HTML
 Route parameters
 Query parameters
+
+Episode 8
+
+Implement CRUD
+GET /users
+
+GET /users/:id
+
+POST /users
+
+PUT /users/:id
+
+DELETE /users/:id
