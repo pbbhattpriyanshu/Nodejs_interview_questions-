@@ -48,8 +48,39 @@ router.get("/user/:id", (req, res) => {
 })
 
 router.put("/user/:id", (req, res) => {
+    const id = Number(req.params.id);
 
-})
+    fs.readFile("users.json", "utf-8", (err, data) => {
+        if (err) {
+            return res.status(500).json({ message: "File read error" });
+        }
+
+        let users = JSON.parse(data);
+
+        const user = users.find(user => user.id === id);
+
+        if (!user) {
+            return res.status(404).json({ message: "User not found" });
+        }
+
+        user.name = req.body.name;
+
+        fs.writeFile(
+            "users.json",
+            JSON.stringify(users, null, 2),
+            (err) => {
+                if (err) {
+                    return res.status(500).json({ message: "Write error" });
+                }
+
+                res.json({
+                    message: "User updated",
+                    user
+                });
+            }
+        );
+    });
+});
 
 router.delete("/user/:id", (req, res) => {
 
