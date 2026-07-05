@@ -1,6 +1,8 @@
 import express from 'express';
+import route from './crudRoutes.js'
 
 const app = express();
+app.use(express.json());
 
 const PORT = 4000;
 
@@ -24,6 +26,8 @@ app.get("/search", (req, res) => {
     console.log(result);
     return res.status(200).json({message: result})
 })
+
+app.use('/api', route)
 
 app.listen(PORT, () => {
     console.log(`Server is listen on PORT: ${PORT}`)
